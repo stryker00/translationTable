@@ -1,0 +1,21 @@
+{
+    "nodes":[
+    {"node":0,"name":"Branding"},
+    {"node":1,"name":"Carceral Geographies"},
+    {"node":2,"name":"Commons"},
+    {"node":3,"name":"Community Land Trust"},
+    {"node":4,"name":"Commuting"},
+    {"node":5,"name":"Composition"},
+    {"node":6,"name":"Design"},
+    {"node":7,"name":"Urbanism"}
+    ],
+    "links":[
+    {"source":0,"target":6,"value":1},
+    {"source":1,"target":7,"value":2},
+    {"source":2,"target":7,"value":3},
+    {"source":3,"target":7,"value":2},
+    {"source":4,"target":7,"value":2},
+    {"source":5,"target":6,"value":2},
+    {"source":5,"target":7,"value":2}
+    ]}
+    
