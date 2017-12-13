@@ -1,0 +1,102 @@
+body {
+  background: white;
+}
+
+.div-table-body {
+  height: 600px; overflow-x: auto; overflow-y: scroll;
+} 
+
+
+.arabic-text {
+    direction: rtl;
+    
+}
+footer {
+    background: black;
+    color: white;
+}
+
+
+/* custom styles 
+*/
+
+.translation.toolbar {
+  color: red;
+}
+
+.translation-toolbar {
+  background: #eee;
+  color: black
+
+
+  
+}
+
+#translation_table {
+    width: 80%;
+    overflow: hidden;
+    margin: auto;
+}
+
+#translation_search {
+  width: 80%;
+  margin: auto;
+
+
+}
+
+
+#translation_about {
+  width: 80%;
+  margin: auto;
+
+
+}
+
+.translation-right {
+  text-align: right;
+}
+
+tr.translation-row {
+  .workshop {
+    opacity: 0.5;
+    font-size: 90%;
+  }
+  .term {
+
+    text-align: left;
+    font-weight: 600;
+    font-size: 120%;
+  }
+
+  .primary {
+    direction: rtl;
+    font-size: 150%;
+    
+  }
+ 
+}
+
+
+.translation_details {
+    font-size: 150%;
+
+}
+
+.translation_details.english {
+  font-size: 120%;
+  line-height: 1.5em;
+  opacity: 0.8;
+
+}
+
+
+.subheader {
+  opacity: 0.5;
+  font-size: 100%;
+}
+
+md-toolbar.md-default-theme:not(.md-menu-toolbar), md-toolbar:not(.md-menu-toolbar) {
+  background-color: #ddd;
+  color: black;
+}

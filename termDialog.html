@@ -1,0 +1,34 @@
+<md-dialog aria-label="{{term}}">
+    <form ng-cloak>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>{{term.term}}</h2>
+                <span flex></span>
+
+                <md-button class="md-icon-button" ng-click="cancel()">
+                    <md-icon md-svg-src="icon.svg" aria-label="Close dialog"></md-icon>
+                </md-button>
+
+            </div>
+        </md-toolbar>
+
+        <md-dialog-content>
+            <div class="md-dialog-content">
+                <h2>{{term.term}}</h2>
+                <h2 class="arabic-text">{{term.primary_translation}}</h2>
+
+                <p>{{term.workshop}}</p>
+                <p class="subheader">Details</p>
+                <p class="translation_details english">{{term.text_en}}</p>
+                <p class="translation_details arabic-text">{{term.text_ar}}</p>
+                <p class="subheader">Technique</p>
+                <p class="translation_technique">{{term.technique_type}}</p>
+
+
+
+            </div>
+        </md-dialog-content>
+
+
+    </form>
+</md-dialog>
