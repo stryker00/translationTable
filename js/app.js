@@ -24,9 +24,14 @@ app.controller('AppController', function AppController($log, $scope, $http, $int
 
 
   // for term display
-  function DialogController($scope, $rootScope, $mdDialog) {
+  function DialogController($scope, $rootScope, $sce, $mdDialog) {
     $scope.term = $rootScope.$$childHead.activeTerm;
     $scope.cancel = function() { $mdDialog.cancel(); }
+
+    self.trust = function(htmlToSanitize) {
+      return $sce.trustAsHtml(htmlToSanitize);
+      
+    }
   
   }
 
@@ -57,6 +62,8 @@ app.controller('AppController', function AppController($log, $scope, $http, $int
 
   // for html data to add later
   self.trust = function(htmlToSanitize) {
+    $log.info("trust on ", htmlToSanitize);
+
     return $sce.trustAsHtml(htmlToSanitize);
   }
 

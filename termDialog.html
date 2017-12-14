@@ -1,4 +1,4 @@
-<md-dialog aria-label="{{term}}">
+<md-dialog aria-label="{{term}}" ng-controller="DialogController as dialog">
     <form ng-cloak>
         <md-toolbar>
             <div class="md-toolbar-tools">
@@ -22,10 +22,8 @@
                 <p class="translation_details english">{{term.text_en}}</p>
                 <p class="translation_details arabic-text">{{term.text_ar}}</p>
                 <p class="subheader">Technique</p>
-                <p class="translation_technique">{{term.technique_type}}</p>
-
-
-
+                <p class="translation_technique"></p>
+                {{ }}
             </div>
         </md-dialog-content>
 
